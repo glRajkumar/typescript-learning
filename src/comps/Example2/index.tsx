@@ -19,8 +19,8 @@ function Counter() {
   const [couter, setCounter] = useState(0)
 
   return (
-    <div>
-      {couter}
+    <div className="mb-4">
+      <p>{couter}</p>
 
       <Btn
         text="Count by 1"
@@ -58,7 +58,9 @@ function Example2() {
   }
 
   return (
-    <>
+    <div>
+      <h1 className="mb-2">Example 2</h1>
+
       <Counter />
 
       <InputWrapper value={val}>
@@ -68,7 +70,7 @@ function Example2() {
         // onChange={e => console.log(e.target.value)}
         />
       </InputWrapper>
-    </>
+    </div>
   )
 }
 
