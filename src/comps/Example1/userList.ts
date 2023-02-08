@@ -39,10 +39,10 @@ const userList: userType[] = [
   },
   {
     id: "2",
-    firstName: "",
+    firstName: "Sam",
     age: 22,
     personalInfo: {
-      email: "@gmail.com",
+      email: "sam@gmail.com",
       phone: 9876543210,
       githubId: "yfdflkj"
     },

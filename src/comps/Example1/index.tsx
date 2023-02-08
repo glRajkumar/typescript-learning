@@ -3,13 +3,13 @@ import userList from './userList';
 
 function Person(props: userType) {
   return (
-    <>
+    <div className='mb-4'>
       <div>
         <p>Name: {props.firstName} {props?.lastName}</p>
         <p>Age: {props.age}</p>
         <p>Email: {props.personalInfo.email}</p>
         <p>Phone: {props.personalInfo.phone}</p>
-        <p>GithubId: {props.personalInfo?.githubId}</p>
+        <p>GithubId: {props.personalInfo?.githubId || "-"}</p>
       </div>
 
       <div>
@@ -37,17 +37,17 @@ function Person(props: userType) {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   )
 }
 
 function Details({ userList, title }: exampleType) {
   return (
     <div>
-      <h1>{title}</h1>
+      <h1 className='mb-4'>{title}</h1>
 
       <div>
-        <h2>User list</h2>
+        <h2 className='mb-2'>User list</h2>
 
         {
           userList.map(user => (
