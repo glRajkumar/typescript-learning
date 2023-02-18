@@ -3,6 +3,7 @@ import Example2 from "./comps/Example2";
 import Example3 from "./comps/Example3";
 import Example4 from "./comps/Example4";
 import Example5 from "./comps/Example5";
+import Example6 from "./comps/Example6";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Example3 />
       <Example4 />
       <Example5 />
+      <Example6 />
     </>
   )
 }
